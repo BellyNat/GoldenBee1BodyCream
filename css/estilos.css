@@ -1,0 +1,383 @@
+:root{
+    --color-primario: #FFD148; 
+    --color-secundario: #92700a; 
+    --texto1: white; 
+    --texto2: black; 
+}
+
+body{box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-primario);
+}
+
+/*.header .bg-transparent{
+    background-color: #92700a !important;
+}*/
+
+.navbar-expand-lg .navbar-nav .nav-link{
+    color: white;
+}
+
+.btn.btn-outline-success{
+    color: white;
+    background-color: #FFD148;
+    border: 2px solid white;
+    font-weight: 500;
+}
+
+.btn.btn-outline-success:hover{
+    color: white;
+    background-color: var(--color-secundario);
+    border: 2px solid white;
+    font-weight: 500;
+}
+
+.btn.btn-outline-success:focus{
+    color: var(--color-secundario);
+    background-color: white;
+    border: 2px solid white;
+    font-weight: 500;
+}
+
+.titulo{
+    font-weight: 700;
+    color: white;
+}
+
+.titulo span{
+    color: #92700a;
+}
+
+.navbar-nav .nav-item .nav-link{
+    color: #92700a;
+    font-size: 22px;
+    font-weight: 400;
+    padding: 1rem;
+}
+/*estas son letras del menu*/
+.navbar-nav .nav-item .nav-link:hover{
+    color: #92700a;
+    font-size: 24px;
+    font-weight: 600;
+    
+}
+.navbar-expand-lg{
+    height: 25%; /*esta es la barrita*/
+}
+
+/*IMAGEN FONDO Y LOGO*/
+
+.fondo{
+    width: 100%;
+    height: 100px;
+    background-color: #FFD148;
+    box-sizing: border-box;
+}
+
+img{
+width: 100%;
+}
+
+.logo {
+    width: 15%;
+    height: auto;
+}
+
+@media screen and (min-width: 768px){
+        .navbar-expand-lg{
+            display: flex;
+            flex-direction: row;
+        }
+
+        .fondo{
+            height: 100%;
+            background-color: #FFD148;
+            box-sizing: border-box;
+        }
+
+        img{
+    object-fit: cover;
+    width:100%;
+}
+
+        .logo{
+            display: flex;
+            position: absolute;
+        }
+}
+
+/*MISSION AND VISION*/
+
+.contenedorinfo1{
+    width: 100%;
+    background-color: transparent;
+}
+
+h2{
+    font-size: 30px;
+    font-weight: 400;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    letter-spacing: 8px;
+    padding-top: 6%;
+    margin-top:5% ;
+}
+
+.missionANDvision pre{
+    font-size: 15px;
+    font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.missionANDvision p{
+    font-size: 20px;
+    font-weight: 300;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+
+@media screen and (min-width: 768px){
+    .contenedorinfo1{
+        width: 100%;
+        background-color: transparent;
+    }
+
+    h2{
+        font-size: 60px;
+        font-weight: 700;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: white;
+        display: flex;
+        justify-content: center;
+        margin: 40px 40px 15px 40px;
+        padding: 40px 25px 15px 25px;
+        letter-spacing: 8px;
+    }
+    
+    .missionANDvision pre{
+        font-size: 25px;
+        font-weight: 500;
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+        display: flex;
+        text-align: center;
+    }
+    
+    .missionANDvision p{
+        font-size: 30px;
+        font-weight: 500;
+        color: black;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        text-decoration: underline;
+        text-decoration-color: black;
+    }
+}
+
+/*ETIQUETAS*/
+
+.card img {
+    height: auto;
+    width: 35%;
+}
+
+img.chiquita{
+    width: 61.2%;
+    height: auto;
+}
+
+.card{
+    background-color: white;
+    height: 50%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card-text{
+    text-align: center;
+}
+
+/*INGREDIENTES*/
+
+.contenedoringredientes{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+body {margin:25px;}
+
+.polaroid {
+    width: 75%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 20px;
+    margin: 2% 2% 2% 2%;
+}
+
+.container img{
+    width: 80%;
+    height: 55%;
+}
+
+.textcontainer {
+    margin-top: 4px;
+    padding-top: 4px;
+}
+
+h3{
+    font-size: 18px;
+    color: #92700a;
+    text-decoration: underline;
+    text-decoration-color: var(--color-secundario);
+    text-align: center;
+    margin-bottom: 5px;
+    padding-bottom: 6px;
+}
+
+p{
+    font-size: 14px;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px){
+    .contenedoringredientes{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .polaroid{
+        width: 24%;
+        margin-bottom: 10px;
+    }
+
+    .container img{
+        width: 100%;
+        height: 60%;
+    }
+
+    .textcontainer {
+        text-align: center;
+        margin-top: 4px;
+        padding-top: 4px;
+    }
+
+    h3{
+        font-size: 24px;
+    }
+
+    p{
+        font-size: 18px;
+        text-align: center;
+    }
+}
+
+/*TIENDA*/
+
+.contenedortienda{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-top: 4%;
+    margin-left: 2%;
+    margin-right: 4%;
+}
+
+.cards{
+    height: 480px;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 30px 30px 30px ;
+    background-color: white;
+}
+
+.cards .card-img-top{
+    width: 100%;
+    height: 65%;
+    overflow: hidden;
+    
+}
+
+.card-title{
+    font-size: 25px;
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: #92700a;
+    color: #92700a;
+}
+
+.card-text{
+    font-size: 15px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.btn.btn-primary{
+    font-weight: 600;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    background-color: var(--color-secundario);
+    border-color: #92700a;
+}
+
+.btn.btn-primary:hover{
+    font-weight: 600;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--color-secundario);
+    background-color:white;
+    border-color: #92700a;
+}
+
+.btn.btn-primary:focus{
+    font-weight: 400;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--color-secundario);
+    background-color:var(--color-primario);
+    border-color: white;
+}
+
+@media screen and (min-width: 768px){
+    .contenedortienda{
+        display: flex;
+        flex-direction: row;
+        align-content: flex-start;
+        flex-wrap: wrap;
+        margin-top: 4%;
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+
+    .cards{
+        height: 550px;
+    }
+
+    .card-title{
+        font-size: 25px;
+    }
+
+    .card-text{
+        font-size: 18px;
+    }
+
+}
+
